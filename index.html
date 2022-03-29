@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>keystone</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/card_1.css">
+  <link rel="stylesheet" href="slick-slider-folder/dist/assets/owl.carousel.min.css">
+  <script src="slick-slider-folder/dist/owl.carousel.min.js"></script>
+  <script src="js/design.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="slick-slider-folder/PinyonScript-Regular.ttf">
+  <link rel="stylesheet" href="font-awesome/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    section {
+      padding-left: 10%;
+      padding-bottom: 100px;
+      padding-right: 10%;
+    }
+
+    .services {
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 10px;
+      font-size: 40px;
+      text-transform: uppercase;
+      color: white;
+    }
+
+    .photo-frame {
+      width: 200px;
+      height: 240px;
+      position: relative;
+      margin: 10px;
+      padding-top: 10px;
+
+
+    }
+
+    .photo-frame:hover .photo {
+      transform: scale(1.1);
+      transition: transform 2s;
+      box-shadow: 1% 1% 1% 1%;
+    }
+
+    .photo img {
+      padding-top: 20px;
+      width: 100%;
+    }
+
+    .photo-details {
+      display: block;
+      position: absolute;
+      top: 30%;
+      left: 17%;
+      text-align: center;
+
+    }
+
+    .photo-details span {
+      color: rgb(219, 48, 48);
+      margin-left: 2PX;
+      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+      margin-right: 30%;
+      margin-top: 1px;
+      padding-bottom: 10px;
+
+      text-align: justify;
+    }
+
+    .hotel {
+      margin-left: 320%;
+      text-align: center;
+    }
+
+    .photo-album {
+      display: flex;
+
+    }
+
+
+    body .top_section {
+      background-image: url(all-images/backround.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+
+
+
+    
+
+    .nav-item {
+      font-family: 'Lato';
+
+
+    }
+
+    p {
+
+      font-size: large;
+
+      text-align: justify;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 50px 50px;
+
+
+    }
+
+    .navbar ul li {
+      font-family: 'Lato';
+    }
+
+    .nav-item li :hover {
+      font-family: 'Lato';
+      color: black;
+    }
+
+    .foot {
+
+      background-image: url("all-images/footer-backroud.jpg");
+      background-size: cover;
+      background-repeat: inherit;
+
+    }
+
+    .table {
+
+      background-image: url("all-images/whiteshades-backround.png");
+
+      width: 128%;
+      height: 90%;
+      background-position: sticky;
+      text-align: justify;
+      font-family: 'Times New Roman', Times, serif;
+      margin-bottom: 10%;
+      table-layout: calc();
+
+    }
+
+    .btn {
+      display: inline;
+
+
+
+
+    }
+
+    .size {
+      background-image: url("all-images/authorized.png");
+      color: whitesmoke;
+      padding-top: 2px;
+      font-family: 'arial'sans-serif;
+      background-size:contain;
+      background-repeat: no-repeat;
+      width: 200px;
+      font-size: 9px;
+      padding: 19px;
+      left: 15%;
+      position: absolute;
+
+
+
+    }
+
+    .card-body {
+      background-image: url("all-images/hotel-a.png");
+
+
+
+    }
+
+    .tbn {
+
+      background-image: url("all-images/buttons/who-we-are.png");
+      background-size: 700%;
+      padding: 2%;
+      margin: 2%, 2%, 2%, 2%;
+      justify-content: space;
+
+
+    }
+
+    .sparate {
+
+      background-size: cover;
+      background-position: relative;
+    }
+
+    .alu {
+      background-image: url('all-images/big-backround.png');
+      width: 100%;
+      height: 190px;
+      background-size: cover;
+      padding-bottom: 80%;
+
+
+    }
+
+    .logo-section {
+      position: relative;
+    }
+
+    .logo-photo {
+      position: absolute;
+      bottom: 50%;
+      left: 3%;
+      margin-left: 200px;
+    }
+
+    .background-photo img {
+      width: 80%;
+    }
+
+    .logo-photo img {
+      width: 80px;
+      height: 100px;
+    }
+
+    .logo-photo-second img {
+      width: 80px;
+      height: 100px;
+    }
+
+    .logo-photo-second {
+      position: absolute;
+      bottom: 15%;
+      left: 3%;
+      margin-left: 200px;
+    }
+
+    .learn-more-button {
+      position: absolute;
+      bottom: 45%;
+      left: 80%;
+
+    }
+
+    .learn-more-button button {
+      border: none;
+      background-image: url("all-images/buttons/white-button.png");
+      text-align: center;
+      font-size: 20px;
+      padding: 10px;
+      border-radius: 30px;
+
+    }
+
+    .learn-more-button button a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .card-img-top {
+      width: 300px;
+      height: 300px;
+    }
+
+    @media (max-width:992px) {
+      .size {
+
+        padding-top: 0;
+      }
+
+    }
+
+
+    .write {
+      
+      color: whitesmoke;
+      background-size: cover;
+      background-image: url("all-images/upper-backroud.png");
+      width: 40%;
+      height: 130%;
+      padding-top: 11%;
+      padding-bottom: 1%;
+      padding-left: 5%;
+      padding-right: 2.5%;
+      margin-right: 40%;
+      margin-left: 48%;
+      font-family: 'Lato';
+
+
+    }
+
+    .learn-more-button2 {
+
+      position: absolute;
+      bottom: 100%;
+      left: 78%;
+      top: 6.2in;
+
+
+    }
+
+
+    .learn-more-button2 button {
+      border: none;
+      background-color: none;
+      text-align: right;
+      border-radius: 30px;
+      background-image: url("all-images/buttons/start-today.png");
+      width: 130%;
+      height: 103%;
+      background-size: cover;
+      padding: 20%;
+      padding-left: .2in;
+      padding-top: 22%;
+      margin-bottom: .15in;
+      font-family: 'Pinyon Script', cursive;
+      font-size: medium;
+      margin-bottom: .5in;
+
+
+    }
+
+
+    .learn-more-button2 button a {
+      text-decoration: none;
+      color: whitesmoke;
+
+
+    }
+  </style>
+
+
+
+
+</head>
+
+<body>
+
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light font-family-lato">
+      <div class="container pt-10 pb-3">
+        <img src="all-images/all-logos/keystone.svg" width="30%" height="30%">
+
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#services">OUR SERVIES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">PORTFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">CONTACT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">RESERVATION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">CAREER</a>
+          </li>
+
+
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+  <div class="top_section">
+    <h6 class="size">Authorized Development Partner for Best Western® Hotels & Resorts – Bangladesh</h6>
+    <div class="div">
+      <div class="row">
+        <div class="col-12" >
+          <h1 class="write pl-2"> We hold together all aspects of
+            your hospitality business... just <br> like a Keystone.
+          </h1>
+          <div class="learn-more-button2">
+            <button><a href="http://google.com
+        " target="_blank">LEARN MORE</a></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <section class="COLOR bg-secondary">
+    <h1 class="services">Our Services</h1>
+    <div class="photo-album">
+      <div class="photo-frame">
+        <div class="photo">
+          <img src="all-images/hotel-a.png" alt="">
+        </div>
+        <div class="photo-details">
+          <span class="hotel">HOTEL</br>
+            ACQUISITION</span>
+        </div>
+      </div>
+      <div class="photo-frame">
+        <div class="photo">
+          <img src="all-images/hotel-deb.png" alt="">
+        </div>
+        <div class="photo-details">
+          <span class="hotel">HOTEL</br>
+            DEVELOPMENT</span>
+        </div>
+      </div>
+      <div class="photo-frame">
+        <div class="photo">
+          <img src="all-images/hotel-mang.png" alt="">
+        </div>
+        <div class="photo-details">
+          <span class="hotel">HOTEL </span></br>
+          <span>MANAGEMENT</span>
+        </div>
+      </div>
+      <div class="photo-frame">
+        <div class="photo">
+          <img src="all-images/dps.png" alt="">
+        </div>
+        <div class="photo-details">
+          <span class="hotel">DISTRESSED</br>
+            PROPERTY</br>
+            CONSULTATION</span>
+        </div>
+      </div>
+      <div class="photo-frame">
+        <div class="photo">
+          <img src="all-images/facility-dev.png" alt="">
+        </div>
+        <div class="photo-details">
+          <span class="hotel">FACILITY</br>
+            DEVELOPMENT</span>
+        </div>
+      </div>
+      <div class="photo-frame">
+        <div class="photo">
+          <img src="all-images/int-dig.png" alt="">
+        </div>
+        <div class="photo-details">
+          <span class="hotel ">INTERIOR <br>
+            DESIGN</span>
+        </div>
+      </div>
+    </div>
+
+
+
+    <h1 style="text-align: center; color: white; padding-top: 10%;">WHY KEYSTON ?</h1>
+    <p style="text-align: justify;   padding-left:20px; color: white; "> With services covering almost every aspect of
+      hospitality development,
+      management
+      and consultation, and being consisted of
+      team members and affiliates with decades-long industry experience in hospitality operation, architecture,
+      procurement, sales
+      and marketing, finance and accounting, legal, and technology, we are the leader in Bangladeshi hospitality
+      industry. We are the
+      exclsive area development partner for Best Western® Hotels & Resorts an international hotel chain with about
+      4700
+      hotels
+      and resorts worldwide. On top of everything, we are a one-stop solution for all of your hospitality needs.</p>
+    <div class="container">
+      <button type="button" button style="margin: 45px;" class="tbn tbn text-danger ">
+        <b> WHO WE ARE</b>
+      </button>
+      <button type="button" button style="margin: 45px;" class="tbn tbn text-danger"><b> Our Story,Mission &
+          Vision</b></button>
+      <button type="button" button style="margin: 45px;" class="tbn tbn text-danger"><b> Our Ethos</b></button>
+    </div>
+
+
+
+
+
+    <div class="logo-section">
+      <div class="background-photo">
+        <img src="all-images/big-backround.png" alt="" srcset="">
+      </div>
+      <div class="logo-photo">
+        <img src="all-images/all-logos/westin.jpg" alt="">
+        <img src="all-images/all-logos/westin.jpg" alt="">
+        <img src="all-images/all-logos/westin.jpg">
+        <img src=" all-images/all-logos/westin.jpg" alt="">
+        <img src="all-images/all-logos/westin.jpg" alt="">
+        <img src="all-images/all-logos/westin.jpg" alt="">
+        <img src="all-images/all-logos/westin.jpg" alt="">
+        <img src="all-images/all-logos/westin.jpg" alt="">
+
+      </div>
+
+      <div class="logo-photo-second">
+        <img src="all-images/all-logos/westin.jpg" alt="">
+        <img src="all-images/all-logos/westin.jpg" alt="">
+        <img src="all-images/all-logos/westin.jpg" alt="">
+        <img src="all-images/all-logos/westin.jpg" alt="">
+        <img src="all-images/all-logos/westin.jpg" alt="">
+        <img src="all-images/all-logos/westin.jpg" alt="">
+      </div>
+
+      <div class="learn-more-button">
+        <button><a href="http://google.com
+" target="_blank">Learn More</a></button>
+      </div>
+    </div>
+  </section>
+
+  <div class="press-section"
+    style="height: 100px; width: 100x; padding-top: 10px; background-image: url('all-images/press&announce-bg.png'); ">
+    <div class="container ">
+
+      <img src="all-images/hotel-manage.png " style="width: 150px; height: 200px; padding-top: 30px; margin: 50px;"
+        alt="hotel-manage">
+
+    </div>
+
+  </div>
+
+  </div>
+
+  </div>
+  </div>
+
+
+  <section>
+    <h1 style="text-align: center;">Press and Announcment</h1>
+    <div class="card-group">
+      <div class="card">
+        <img src="all-images/hotels-pictures/Five_star.png" class="card-img-top">
+        <div class="card-body" width="">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="all-images/hotels-pictures/Five_star.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title ">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+          </p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="all-images/hotels-pictures/Transparent_vila.png" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+            additional content. This card has even longer content than the first to show that equal height
+            action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="foot justify-content-center ">
+
+      <div class="container pt-2" class="table-responsive">
+        <div class="row mb-6">
+          <div class="col-md-10 mt-6 ">
+
+            <table class="table table-align-top table-borderless table-align-middle justify-content text-white mt-4 ">
+              <thead>
+                <tr>
+
+                  <th colspan="2">OUR SERVICES</th>
+                  <th colspan="2">ABOUT US</th>
+                  <th colspan="2">CONTACT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+
+                  <td colspan="2">Hotel Acqusition</td>
+                  <td colspan="2">Who we are</td>
+                  <td colspan="2">
+                    <a href="www.facbook.com"> <i class="fa-brands fa-facebook">
+
+                      </i></a>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+
+
+                  </td>
+                </tr>
+
+                <tr>
+
+                  <td colspan="2">Hotel Development</td>
+                  <td colspan="2">Our Ethos</td>
+                  <td colspan="2">
+                    <i class="fa-light fa-location-dot"></i>
+                  </td>
+                  <td colspan="2"></td>
+                  <td colspan="2"></td>
+                  <td colspan="2"></td>
+                </tr>
+                <tr>
+
+                  <td colspan="2">Hotel Management</td>
+                  <td colspan="2">Our Story, Mission & Vision </td>
+                  <td colspan="2">
+
+
+                    <button type="button" class="btn  text-white border-white"> GET IN TOUCH</button>
+                  </td>
+                </tr>
+                <tr>
+
+                  <td colspan="2">Distressed Property Consultation</td>
+                  <td colspan="2">Our Services </td>
+                  <td colspan="2"> </td>
+                </tr>
+
+
+                <tr>
+
+                  <td colspan="2">Facility Development</td>
+                  <td colspan="2"> Portfolio</td>
+                  <td colspan="2"> </td>
+                </tr>
+                <tr>
+
+                  <td colspan="2"> <button type="button" class=" btn btn text-white  ">
+                      DOWNLOADS</button></td>
+                  <td colspan="2"> Career</td>
+                  <td colspan="2"> </td>
+                </tr>
+
+              </tbody>
+
+            </table>
+
+
+            </tr>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </footer>
+</body>
+
+</html>
