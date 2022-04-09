@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/card_1.css">
+    <link rel="stylesheet" href="slick-slider-folder/dist/assets/owl.carousel.min.css">
+    <script src="slick-slider-folder/dist/owl.carousel.min.js"></script>
+    <script src="js/design.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="slick-slider-folder/PinyonScript-Regular.ttf">
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+    <style>
+
+
+
+    .nav-item {
+      font-family: 'Lato';
+
+
+    }
+
+    p {
+
+      font-size: large;
+
+      text-align: justify;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 50px 50px;
+
+
+    }
+
+    .navbar ul li {
+      font-family: 'Lato';
+    }
+
+    .nav-item li :hover {
+      font-family: 'Lato';
+      color: black;
+    }
+
+    .size {
+      background-image: url(all-images/authorized.png);
+      color: whitesmoke;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 200px;
+      font-size: 8.5px;
+      padding: 17px;
+      left: 19%;
+      position: absolute;
+    }
+   
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light font-family-lato">
+          <div class="container pt-10 pb-3">
+            <img src="all-images/all-logos/keystone.svg" width="30%" height="30%">
+    
+    
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#services">OUR SERVIES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#protfolio">PORTFOLIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">CONTACT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">RESERVATION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">CAREER</a>
+              </li>
+    
+    
+            </ul>
+          </div>
+    
+        
+       </nav>
+    <div class="upper-section" style="background-image: url('all-images/our-services/background-of-our-services.jpg');height: 700px;">
+  
+    </div>
+    
+</body>
+
+</html>
