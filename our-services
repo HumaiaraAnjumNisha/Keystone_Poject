@@ -58,12 +58,42 @@
 
     .upper-section {
       background-image: url('all-images/our-services/background-of-our-services.jpg');
-      height: 540px;
+      height: 600px;
       background-size: cover;
       text-align: center;
       color: whitesmoke;
 
 
+    }
+
+    .photo-frame {
+      width: 200px;
+      height: 240px;
+      position: relative;
+      margin: 10px;
+      padding-top: 10px;
+
+
+    }
+
+
+
+    .photo-frame:hover .photo {
+      transform: scale(1.1);
+      transition: transform 2s;
+      box-shadow: 1% 1% 1% 1%;
+
+    }
+
+    .photo {
+      background-color: transparent;
+      box-shadow: 1px 1px 1px 1px black;
+      padding: 15px;
+      margin-left: 20px;
+    }
+
+    .photo-album {
+      display: flex;
     }
   </style>
 </head>
@@ -102,24 +132,51 @@
     </nav>
     <div class="top_section">
       <h6 class="size">Authorized Development Partner for Best Western® Hotels & Resorts – Bangladesh</h6>
-   </div>
-    
-    </header>
-    <section>
-  <div class="upper-section">
-    <h1 style="font-size: 133px;padding: 136px;">OUR SERVICES</h1>
-    <div class="photo-album">
-    <div class="photo-frame">
-      <div class="photo">
-        <img src="all-images/" alt="">
+    </div>
+
+  </header>
+  <section>
+    <div class="upper-section">
+      <h1 style="font-size: 80px;padding: 141px;">OUR SERVICES</h1>
+      <div class="photo-album">
+        <div class="photo-frame">
+          <div class="photo">
+            <h5>HOTEL <br> ACQUISITION</h5>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="photo">
+            <h5>HOTEL <br>DEVELOPMENT</h5>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="photo">
+            <h5>HOTEL <br> MANAGEMENT</h5>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="photo">
+            <h6> DISTRESSED PROPERTY CONSULTATION
+            </h6>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="photo">
+            <h5>FACILITY <br> DEVELOPMENT</h5>
+          </div>
+        </div>
+        <div class="photo-frame">
+          <div class="photo">
+            <h5>INTERIOR<br>DESIGN</h5>
+          </div>
+        </div>
       </div>
+    </div>
 
 
+    </div>
 
-  
-  </div>
-
-</section>
+  </section>
 
 </body>
 
